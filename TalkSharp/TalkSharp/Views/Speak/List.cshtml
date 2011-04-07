@@ -1,0 +1,43 @@
+﻿@model List<TalkSharp.Models.Message>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<ul>
+@foreach (var Message in Model)
+{
+    <li>
+    @Message.Number : @Message.Text<br />
+    @if (Message.Messages != null)
+    {
+        <ul>
+            @foreach (var NestedMessage in Message.Messages)
+            {  
+                <li>@NestedMessage.Number : @NestedMessage.Text</li> 
+            }
+        </ul>
+    }
+    @if (Message.Metadata != null)
+    {
+        if (Message.Metadata.TimeStamp != null)
+        {
+        <i>@Message.Metadata.TimeStamp.ToString()</i>
+        }
+        if (Message.Metadata.Pairs != null)
+        {
+        <ul>    
+            @foreach (var Metadata in Message.Metadata.Pairs)
+            {  
+                <li>@Metadata.Key : @Metadata.Value</li> 
+            }
+        </ul>
+        }
+    }
+    </li>
+}
+</ul>
+    
+

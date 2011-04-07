@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkSharp", "TalkSharp\TalkSharp.csproj", "{940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

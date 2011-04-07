@@ -1,0 +1,8 @@
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\bin\TalkSharp.dll
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\bin\TalkSharp.pdb
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\bin\Newtonsoft.Json.dll
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\bin\Newtonsoft.Json.pdb
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\bin\Newtonsoft.Json.xml
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\obj\Debug\ResolveAssemblyReference.cache
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\obj\Debug\TalkSharp.dll
+c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\obj\Debug\TalkSharp.pdb
