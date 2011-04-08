@@ -46,9 +46,9 @@ public class Menu {
         menu.put(5, new InputHandler() {
             @Override
             public boolean doOnSelect() throws IOException {
-                out("Messages SPACE Separated");
+                out("Messages SPACE Separated Example : \"Hello World Server\"");
                 String[] messages = in.readLine().split(" ");
-                out("Metadata - pattern \"key:value\" SPACE Separated");
+                out("Metadata - pattern \"key:value\" SPACE Separated Example : \"ignore:false status:urgent\"");
                 String[] metadata = in.readLine().split(" ");
                 HashMap<String, String> meta = new HashMap<String, String>();
                 for (int i = 0; i < metadata.length; i++)
