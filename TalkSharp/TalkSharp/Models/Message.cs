@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace TalkSharp.Models
+﻿namespace TalkSharp.Models
 {
     public class Message
     {
@@ -10,26 +8,8 @@ namespace TalkSharp.Models
             this.Text = Text;
         }
 
-        public Message(int Number, string Text, List<Message> Messages) : this(Number, Text)
-        {
-            this.Messages = Messages;
-        }
-
-        public Message(int Number, string Text, MessageMetadata Metadata) : this(Number, Text)
-        {
-            this.Metadata = Metadata;
-        }
-
-        public Message()
-        {
-        }
-
         public int Number { get; set; }
 
         public string Text { get; set; }
-
-        public List<Message> Messages { get; set; }
-
-        public MessageMetadata Metadata { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
+using TalkSharp.Utility;
 
 namespace TalkSharp
 {
@@ -28,6 +29,19 @@ namespace TalkSharp
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+
+            /*  Before writing my custom Json ModelBinder I searched and got this :) 
+             *  http://mgolchin.net/posts/19/dive-deep-into-mvc-ivalueprovider
+             *  http://haacked.com/archive/2010/04/15/sending-json-to-an-asp-net-mvc-action-method-argument.aspx
+             *  
+             *  This ValueProvider picks up posted Json and populates Action method arguments, using the default JavaScriptSerializer
+             *  ValueProviderFactories.Factories.Add(new JsonValueProviderFactory());
+             *  
+             *  Or we can skip adding ValueProvider, and have this code segement in all action methods :
+             *  
+             *  var Serializer = new JsonSerializer();
+             *  var DeserializedMessage = Serializer.Deserialize<WhateverType>(new JsonTextReader(new StreamReader(Request.InputStream)));
+             */
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);

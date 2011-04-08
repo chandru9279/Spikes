@@ -64,10 +64,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ComplexMessage.cs" />
     <Compile Include="Models\Message.cs" />
-    <Compile Include="Models\MessageMetadata.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utility\JsonizerResult.cs" />
+    <Compile Include="Utility\JsonDotNetResult.cs" />
+    <Compile Include="Utility\TalkSharpUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />

@@ -6,3 +6,11 @@ c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\bin\Newt
 c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\obj\Debug\ResolveAssemblyReference.cache
 c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\obj\Debug\TalkSharp.dll
 c:\users\home\documents\visual studio 2010\Projects\TalkSharp\TalkSharp\obj\Debug\TalkSharp.pdb
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\bin\TalkSharp.dll
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\bin\TalkSharp.pdb
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\bin\Newtonsoft.Json.dll
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\bin\Newtonsoft.Json.pdb
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\bin\Newtonsoft.Json.xml
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\obj\Debug\TalkSharp.dll
+F:\Work\Orcas\Spikes\TalkSharp\TalkSharp\obj\Debug\TalkSharp.pdb

@@ -1,43 +1,54 @@
-﻿@model List<TalkSharp.Models.Message>
-
+﻿@{
+    var Simple = TalkSharp.Controllers.SpeakController.Recordings;
+    var Complex = TalkSharp.Controllers.SpeakController.ComplexRecordings;
+    var i = 1;
+}
 @{
     ViewBag.Title = "List";
 }
-
-<h2>List</h2>
-
+<h2>
+    Simple Messages
+</h2>
 <ul>
-@foreach (var Message in Model)
+    @foreach (var Message in Simple)
+    {
+        <li>
+            @Message.Number : @Message.Text<br />
+        </li>
+    }
+</ul>
+<h2>
+    Complex Messages
+</h2>
+<ol>
+@foreach (var Message in Complex)
 {
     <li>
-    @Message.Number : @Message.Text<br />
     @if (Message.Messages != null)
     {
-        <ul>
-            @foreach (var NestedMessage in Message.Messages)
-            {  
-                <li>@NestedMessage.Number : @NestedMessage.Text</li> 
-            }
-        </ul>
+    <h4>Messages</h4>
+    <ul>
+        @foreach (var NestedMessage in Message.Messages)
+        {  
+            <li>@NestedMessage.Number : @NestedMessage.Text</li> 
+        }
+    </ul>
+    }
+    @if (Message.Timestamp != null)
+    {
+    <h4>Timestamp</h4>
+    <i>@Message.Timestamp.ToString()</i>
     }
     @if (Message.Metadata != null)
     {
-        if (Message.Metadata.TimeStamp != null)
-        {
-        <i>@Message.Metadata.TimeStamp.ToString()</i>
+    <h4>Metadata</h4>
+    <ul>
+        @foreach (var Metadata in Message.Metadata)
+        {  
+            <li>@Metadata.Key : @Metadata.Value</li> 
         }
-        if (Message.Metadata.Pairs != null)
-        {
-        <ul>    
-            @foreach (var Metadata in Message.Metadata.Pairs)
-            {  
-                <li>@Metadata.Key : @Metadata.Value</li> 
-            }
-        </ul>
-        }
+    </ul>
     }
     </li>
 }
-</ul>
-    
-
+</ol>

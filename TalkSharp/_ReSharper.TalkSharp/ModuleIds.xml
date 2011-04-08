@@ -1,3 +1,4 @@
 <Modules>
   <Module PersistentId="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3" ModuleId="TalkSharp" />
+  <Module PersistentId="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" ModuleId="System.Web.Mvc" />
 </Modules>

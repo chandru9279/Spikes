@@ -1,5 +1,6 @@
 package Speak;
 
+import Models.ComplexMessage;
 import Models.Message;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -25,16 +26,10 @@ public class GetData {
         this.httpClient = httpClient;
     }
 
-    public void GetAll() throws IOException {
-        HttpGet httpGet = new HttpGet("http://localhost:6419/Speak/GetAll");
+    public void GetAllSimple() throws IOException {
+        HttpEntity entity = doGetRequest("http://localhost:6419/Speak/GetAllSimple");
 
-        HttpResponse response = httpClient.execute(httpGet);
-        HttpEntity entity = response.getEntity();
-        log("GET \"http://localhost:6419/Speak/GetAll\" returned : " + response.getStatusLine());
-
-        GsonBuilder b = new GsonBuilder();
-        b.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        Gson gson = b.create();
+        Gson gson = new Gson();
 
         Type type = new TypeToken<ArrayList<Message>>() {
         }.getType();
@@ -43,41 +38,65 @@ public class GetData {
         for (Message message : messages)
             logMessage(message);
 
-        // This utility method clears the InputStream of the entity making it available for the next request
+        // This utility method clears the InputStream of the entity making the httpClient available for the next request
         EntityUtils.consume(entity);
     }
 
     public void GetLast() throws IOException {
-        HttpGet httpGet = new HttpGet("http://localhost:6419/Speak/Getlast");
+        HttpEntity entity = doGetRequest("http://localhost:6419/Speak/GetLast");
 
-        HttpResponse response = httpClient.execute(httpGet);
-        HttpEntity entity = response.getEntity();
-        log("GET \"http://localhost:6419/Speak/Getlast\" returned : " + response.getStatusLine());
-
-        GsonBuilder b = new GsonBuilder();
-        b.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        Gson gson = b.create();
+        Gson gson = new Gson();
         Message message = gson.fromJson(new InputStreamReader(entity.getContent()), Message.class);
         logMessage(message);
 
         EntityUtils.consume(entity);
     }
 
-    private void logMessage(Message message) {
-        log(message.Number + " : " + message.Text);
-        if (message.Messages != null)
-            for (Message nestedMessage : message.Messages)
-                log("\t" + nestedMessage.Number + " : " + nestedMessage.Text);
-        if (message.Metadata != null)
+    public void GetAllComplex() throws IOException {
+        HttpEntity entity = doGetRequest("http://localhost:6419/Speak/GetAllComplex");
+
+        GsonBuilder builder = new GsonBuilder();
+        builder.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        Gson gson = builder.create();
+
+        Type type = new TypeToken<ArrayList<ComplexMessage>>() {
+        }.getType();
+
+        List<ComplexMessage> messages = gson.fromJson(new InputStreamReader(entity.getContent()), type);
+        int messageNumber = 1;
+        for (ComplexMessage message : messages)
         {
-            if(message.Metadata.TimeStamp != null)
-                log("\t TimeStamp : " + message.Metadata.TimeStamp);
-            if(message.Metadata.Pairs != null) {
-                for (Map.Entry<String, String> pair : message.Metadata.Pairs.entrySet())
-                    log("\t" + pair.getKey() + " : " + pair.getValue());
-            }
+            log(messageNumber++ + "");
+            logComplexMessage(message);
         }
     }
+
+    private HttpEntity doGetRequest(String url) throws IOException {
+        HttpGet httpGet = new HttpGet(url);
+        HttpResponse response = httpClient.execute(httpGet);
+        HttpEntity entity = response.getEntity();
+        log("GET \"" + url + "\" returned : " + response.getStatusLine());
+        return entity;
+    }
+
+    private void logMessage(Message message) {
+        log(message.Number + " : " + message.Text);
+    }
+
+    private void logComplexMessage(ComplexMessage message) {
+        if (message.Messages != null) {
+            log("Messages : ");
+            for (Message nestedMessage : message.Messages)
+                log("\t" + nestedMessage.Number + " : " + nestedMessage.Text);
+        }
+        log("TimeStamp : " + message.Timestamp);
+        if (message.Metadata != null) {
+            log("Metadata : ");
+            for (Map.Entry<String, String> pair : message.Metadata.entrySet())
+                log("\t" + pair.getKey() + " : " + pair.getValue());
+        }
+    }
+
 
     private void log(String log) {
         System.out.println(log);

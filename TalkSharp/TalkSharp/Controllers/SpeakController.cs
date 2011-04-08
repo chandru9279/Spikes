@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Web.Mvc;
-using Newtonsoft.Json;
 using TalkSharp.Models;
 using TalkSharp.Utility;
 
@@ -13,53 +11,69 @@ namespace TalkSharp.Controllers
 
     public class SpeakController : Controller
     {
-        private static readonly Dictionary<string, string> _Dictionary = new Dictionary<string, string>
+        private static readonly Dictionary<string, string> SampleMetadata = new Dictionary<string, string>
                                                                              {
                                                                                  {"SenderName", "Sender"},
                                                                                  {"Tag", "Urgent"}
                                                                              };
 
+        public static List<ComplexMessage> ComplexRecordings = new List<ComplexMessage>
+                                                                   {
+                                                                       new ComplexMessage(
+                                                                           DateTime.Now,
+                                                                           SampleMetadata, new List<Message>
+                                                                                            {
+                                                                                                new Message(4, "Four"),
+                                                                                                new Message(5, "Five")
+                                                                                            })
+                                                                   };
+
         // This will simulate state - A bunch of Messages stored on the ServerSide
         public static List<Message> Recordings = new List<Message>
                                                      {
                                                          new Message(1, "One"),
-                                                         new Message(2, "Two", new List<Message>
-                                                                                   {
-                                                                                       new Message(3, "Three"),
-                                                                                       new Message(4, "Four")
-                                                                                   }),
-                                                         new Message(5, "Five", new MessageMetadata
-                                                                                    {
-                                                                                        TimeStamp = DateTime.Now,
-                                                                                        Pairs = _Dictionary
-                                                                                    })
+                                                         new Message(2, "Two"),
+                                                         new Message(3, "Three")
                                                      };
 
         [HttpPost]
-        public ActionResult Save(string Message)
+        public ActionResult Save()
         {
-            var Serializer = new JsonSerializer();
-            var DeserializedMessage = Serializer.Deserialize<Message>(new JsonTextReader(new StringReader(Message)));
-            Recordings.Add(DeserializedMessage);
+            var JsonMessage = TalkSharpUtils.Deserialize<Message>(Request.InputStream);
+            Recordings.Add(JsonMessage);
             return new HttpStatusCodeResult(200);
         }
 
-        public ActionResult GetAll()
+        [HttpPost]
+        public ActionResult SaveComplex()
         {
-            return new JsonizerResult(Recordings);
+            var JsonComplexMessage = TalkSharpUtils.Deserialize<ComplexMessage>(Request.InputStream);
+            ComplexRecordings.Add(JsonComplexMessage);
+            return new HttpStatusCodeResult(200);
         }
+
+        public ActionResult GetAllSimple()
+        {
+            return new JsonDotNetResult(Recordings);
+        }
+
+        public ActionResult GetAllComplex()
+        {
+            return new JsonDotNetResult(ComplexRecordings);
+        }
+
 
         public ActionResult GetLast()
         {
             Message Message = Recordings.Count > 1
-                                  ? Recordings[Recordings.Count - 1]
-                                  : new Message(0, "No Messages");
-            return new JsonizerResult(Message);
+                                                ? Recordings[Recordings.Count - 1]
+                                                : new Message(0, "No Messages");
+            return new JsonDotNetResult(Message);
         }
 
         public ActionResult List()
         {
-            return View(Recordings);
+            return View();
         }
     }
 }

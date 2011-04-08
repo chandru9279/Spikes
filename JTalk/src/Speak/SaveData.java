@@ -1,22 +1,23 @@
 package Speak;
 
+import Models.ComplexMessage;
 import Models.Message;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.http.HttpResponse;
-import org.apache.http.NameValuePair;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
+import java.util.Map;
 
 public class SaveData {
-    private int MessageNumber = 10;
+    private int messageNumber = 10;
 
     private DefaultHttpClient httpClient;
 
@@ -24,21 +25,39 @@ public class SaveData {
         this.httpClient = httpClient;
     }
 
-    public void saveMessage(String MessageText) throws IOException {
-        HttpPost httpPost = new HttpPost("http://localhost:6419/Speak/Save");
+    public void sendMessage(String MessageText) throws IOException {
+        doPostRequest(new Message(messageNumber, MessageText), new Gson(), "http://localhost:6419/Speak/Save");
+    }
 
-        Gson gson = new Gson();
+    public void sendComplexMessage(Map<String, String> metadata, String[] messages) throws IOException {
 
-        List<NameValuePair> pairs = new ArrayList<NameValuePair>();
-        pairs.add(new BasicNameValuePair("Message", gson.toJson(new Message(MessageNumber, MessageText))));
+        GsonBuilder builder = new GsonBuilder();
+        builder.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+        Gson gson = builder.create();
 
-        httpPost.setEntity(new UrlEncodedFormEntity(pairs, HTTP.UTF_8));
+        ComplexMessage complexMessage = new ComplexMessage();
+        complexMessage.Messages = new ArrayList<Message>();
+        for (int i = 0; i < messages.length; i++)
+            if (isNotEmpty(messages[i]))
+                complexMessage.Messages.add(new Message(messageNumber, messages[i]));
+        complexMessage.Timestamp = new Date();
+        complexMessage.Metadata = metadata;
+
+        doPostRequest(complexMessage, gson, "http://localhost:6419/Speak/SaveComplex");
+    }
+
+    private void doPostRequest(Object message, Gson gson, String url) throws IOException {
+        HttpPost httpPost = new HttpPost(url);
+        httpPost.setEntity(new StringEntity(gson.toJson(message), "application/json", HTTP.UTF_8));
         HttpResponse response = httpClient.execute(httpPost);
 
-        log("POST \"http://localhost:6419/Speak/Save\" returned : " + response.getStatusLine());
-        MessageNumber++;
-
+        log("POST \"" + url + "\" returned : " + response.getStatusLine());
+        messageNumber += 2;
         EntityUtils.consume(response.getEntity());
+    }
+
+    public boolean isNotEmpty(String message) {
+        return message != null && !message.trim().equals("");
     }
 
     private void log(String log) {

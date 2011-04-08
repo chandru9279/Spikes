@@ -11,23 +11,14 @@ public class Start {
 
     public static void main(String[] args) throws IOException {
         DefaultHttpClient httpClient = new DefaultHttpClient();
+        final GetData getData = new GetData(httpClient);
+        final SaveData saveData = new SaveData(httpClient);
+        Menu menu = new Menu(getData, saveData);
         try {
-            GetData getData = new GetData(httpClient);
-            SaveData saveData = new SaveData(httpClient);
-            getData.GetAll();
-            getData.GetLast();
-            saveData.saveMessage("Ten");
-            getData.GetLast();
-            saveData.saveMessage("Eleven");
-            getData.GetLast();
-            saveData.saveMessage("Twelve");
-            getData.GetAll();
-
+            while (true)
+                if (!menu.show()) break;
         } finally {
             httpClient.getConnectionManager().shutdown();
         }
-
     }
-
-
 }
