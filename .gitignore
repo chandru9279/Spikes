@@ -1,0 +1,8 @@
+JTalk/.idea/
+JTalk/out/
+TalkSharp/_ReSharper.TalkSharp/
+TalkSharp/bin/
+TalkSharp/obj/
+*.user
+*.suo
+*.cache
