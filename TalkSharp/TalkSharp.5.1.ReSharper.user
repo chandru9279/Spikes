@@ -8,35 +8,57 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax" caret="34" fromTop="0" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="702" fromTop="18" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:MenuController.cs" caret="112" fromTop="5" />
       <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Shared/f:_Layout.cshtml" caret="124" fromTop="10" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:ComplexMessage.cs" caret="548" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1673" fromTop="32" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="705" fromTop="28" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="150" fromTop="6" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="626" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="379" fromTop="12" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2478" fromTop="26" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Shared/f:_Layout.cshtml" caret="128" fromTop="10" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="185" fromTop="8" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Talk/f:List.cshtml" caret="469" fromTop="22" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Address.cs" caret="559" fromTop="22" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="511" fromTop="17" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="1018" fromTop="17" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:ComplexMessage.cs" caret="520" fromTop="18" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="248" fromTop="9" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="633" fromTop="20" />
+      <File id="d:Miscellaneous Files/f:DateTimeXstreamInterop.cs/l:C!?Documents and Settings?thiagac?Local Settings?Temp?7zE1DA.tmp?DateTimeXstreamInterop.cs" caret="955" fromTop="37" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:InMemoryStore.cs" caret="2893" fromTop="31" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:TalkController.cs" caret="724" fromTop="25" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="1126" fromTop="20" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:XmlResult.cs" caret="434" fromTop="16" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="2539" fromTop="38" />
     </RecentFiles>
     <RecentEdits>
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="528" fromTop="21" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="488" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="45" fromTop="1" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="255" fromTop="9" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="186" fromTop="7" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1872" fromTop="38" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1010" fromTop="26" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2713" fromTop="33" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3038" fromTop="24" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1884" fromTop="35" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3167" fromTop="38" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3511" fromTop="47" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="753" fromTop="20" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1531" fromTop="26" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2805" fromTop="34" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="71" fromTop="2" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="413" fromTop="16" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2478" fromTop="26" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Address.cs" caret="90" fromTop="4" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="3192" fromTop="37" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="3192" fromTop="25" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:MenuController.cs" caret="0" fromTop="0" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:MenuController.cs" caret="205" fromTop="10" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:MenuController.cs" caret="146" fromTop="6" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="753" fromTop="11" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="774" fromTop="23" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="48" fromTop="1" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Shared/f:_Layout.cshtml" caret="85" fromTop="6" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="185" fromTop="8" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Talk/f:List.cshtml" caret="157" fromTop="5" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="938" fromTop="14" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="912" fromTop="26" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="2697" fromTop="37" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="1754" fromTop="17" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="1410" fromTop="13" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="2572" fromTop="39" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:Utils.cs" caret="2385" fromTop="35" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="696" fromTop="12" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="648" fromTop="11" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="129" fromTop="10" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="122" fromTop="10" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Menu/f:Show.cshtml" caret="50" fromTop="4" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="3192" fromTop="34" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="3192" fromTop="28" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="3192" fromTop="10" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="3192" fromTop="72" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="216" fromTop="9" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Person.cs" caret="1105" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -52,30 +74,30 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="7" />
+      <Item value="public" priority="8" />
       <Item value="int" priority="0" />
       <Item value="set" priority="3" />
       <Item value="Message`0" priority="2" />
       <Item value="ActionResult`0" priority="0" />
       <Item value="return" priority="4" />
       <Item value="HttpStatusCodeResult`0" priority="0" />
-      <Item value="new" priority="11" />
+      <Item value="new" priority="13" />
       <Item value="JsonResult`0" priority="1" />
       <Item value="this" priority="1" />
       <Item value="JsonResult" priority="0" />
       <Item value="Model`0" priority="0" />
-      <Item value="T`0" priority="1" />
-      <Item value="Response" priority="0" />
+      <Item value="T`0" priority="2" />
+      <Item value="Response" priority="1" />
       <Item value="MultiSelectList`0" priority="0" />
       <Item value="List&lt;Message&gt;" priority="0" />
       <Item value="Recordings" priority="4" />
       <Item value="Message" priority="1" />
       <Item value="Nested" priority="0" />
-      <Item value="string" priority="2" />
-      <Item value="Serializer" priority="1" />
+      <Item value="string" priority="3" />
+      <Item value="Serializer" priority="3" />
       <Item value="Json`0" priority="0" />
       <Item value="TheMessage" priority="0" />
-      <Item value="static" priority="2" />
+      <Item value="static" priority="4" />
       <Item value="MessageMetadata`0" priority="0" />
       <Item value="Number" priority="0" />
       <Item value="Text" priority="0" />
@@ -87,7 +109,7 @@
       <Item value="IsoDateTimeConverter" priority="0" />
       <Item value="AdjustToUniversal" priority="0" />
       <Item value="ComplexMessage" priority="0" />
-      <Item value="DateTime`0" priority="0" />
+      <Item value="DateTime`0" priority="1" />
       <Item value="_Dictionary" priority="0" />
       <Item value="ComplexRecordings" priority="0" />
       <Item value="bool" priority="0" />
@@ -99,7 +121,7 @@
       <Item value="ValueProviderResult`0" priority="0" />
       <Item value="false" priority="0" />
       <Item value="bodyText" priority="0" />
-      <Item value="TextReader`0" priority="1" />
+      <Item value="TextReader`0" priority="3" />
       <Item value="reader" priority="2" />
       <Item value="JsonReader`0" priority="0" />
       <Item value="jsonData" priority="0" />
@@ -111,7 +133,20 @@
       <Item value="TalkSharpUtils`0" priority="1" />
       <Item value="UTF8" priority="1" />
       <Item value="GetSerializer`0" priority="0" />
-      <Item value="RequestStream" priority="0" />
+      <Item value="RequestStream" priority="1" />
+      <Item value="InMemoryStore`0" priority="0" />
+      <Item value="Address`0" priority="3" />
+      <Item value="XmlElement" priority="0" />
+      <Item value="Stream`0" priority="1" />
+      <Item value="TextWriter`0" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="where" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="People" priority="0" />
+      <Item value="Person" priority="0" />
+      <Item value="IXmlSerializable`0" priority="0" />
+      <Item value="Namespaces" priority="0" />
+      <Item value="private" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:TalkSharp.Controllers.SpeakController">
       <Item value="Json`0" priority="0" />
@@ -157,6 +192,22 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@TalkSharp.Utility.TalkSharpUtils">
       <Item value="GetSerializer`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TalkSharp.Controllers.InMemoryStore">
+      <Item value="Recordings" priority="0" />
+      <Item value="People" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="AddYears`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Serialization.XmlSerializer">
+      <Item value="Deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TalkSharp.Utility.Utils">
+      <Item value="Serialize`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Formatting">
+      <Item value="None" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
