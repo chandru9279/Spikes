@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Web.Mvc;
 using TalkSharp.Models;
 using TalkSharp.Utility;
@@ -11,35 +10,13 @@ namespace TalkSharp.Controllers
 
     public class SpeakController : Controller
     {
-        private static readonly Dictionary<string, string> SampleMetadata = new Dictionary<string, string>
-                                                                             {
-                                                                                 {"SenderName", "Sender"},
-                                                                                 {"Tag", "Urgent"}
-                                                                             };
-
-        public static List<ComplexMessage> ComplexRecordings = new List<ComplexMessage>
-                                                                   {
-                                                                       new ComplexMessage(
-                                                                           DateTime.Now,
-                                                                           SampleMetadata, new List<Message>
-                                                                                            {
-                                                                                                new Message(4, "Four"),
-                                                                                                new Message(5, "Five")
-                                                                                            })
-                                                                   };
-
-        // This will simulate state - A bunch of Messages stored on the ServerSide
-        public static List<Message> Recordings = new List<Message>
-                                                     {
-                                                         new Message(1, "One"),
-                                                         new Message(2, "Two"),
-                                                         new Message(3, "Three")
-                                                     };
-
+        private static readonly List<Message> Recordings = InMemoryStore.Recordings;
+        private static readonly List<ComplexMessage> ComplexRecordings = InMemoryStore.ComplexRecordings;
+        
         [HttpPost]
         public ActionResult Save()
         {
-            var JsonMessage = TalkSharpUtils.Deserialize<Message>(Request.InputStream);
+            var JsonMessage = Utils.DeserializeJson<Message>(Request.InputStream);
             Recordings.Add(JsonMessage);
             return new HttpStatusCodeResult(200);
         }
@@ -47,7 +24,7 @@ namespace TalkSharp.Controllers
         [HttpPost]
         public ActionResult SaveComplex()
         {
-            var JsonComplexMessage = TalkSharpUtils.Deserialize<ComplexMessage>(Request.InputStream);
+            var JsonComplexMessage = Utils.DeserializeJson<ComplexMessage>(Request.InputStream);
             ComplexRecordings.Add(JsonComplexMessage);
             return new HttpStatusCodeResult(200);
         }
@@ -65,7 +42,7 @@ namespace TalkSharp.Controllers
 
         public ActionResult GetLast()
         {
-            Message Message = Recordings.Count > 1
+            Message Message = Recordings.Count > 0
                                                 ? Recordings[Recordings.Count - 1]
                                                 : new Message(0, "No Messages");
             return new JsonDotNetResult(Message);

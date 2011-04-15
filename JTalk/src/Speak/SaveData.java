@@ -16,6 +16,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
 
+import static Entry.Start.ServerJsonEndpoint;
+
 public class SaveData {
     private int messageNumber = 10;
 
@@ -26,7 +28,7 @@ public class SaveData {
     }
 
     public void sendMessage(String MessageText) throws IOException {
-        doPostRequest(new Message(messageNumber, MessageText), new Gson(), "http://localhost:6419/Speak/Save");
+        doPostRequest(new Message(messageNumber, MessageText), new Gson(), ServerJsonEndpoint + "Save");
     }
 
     public void sendComplexMessage(Map<String, String> metadata, String[] messages) throws IOException {
@@ -43,14 +45,15 @@ public class SaveData {
         complexMessage.Timestamp = new Date();
         complexMessage.Metadata = metadata;
 
-        doPostRequest(complexMessage, gson, "http://localhost:6419/Speak/SaveComplex");
+        doPostRequest(complexMessage, gson, ServerJsonEndpoint + "SaveComplex");
     }
 
     private void doPostRequest(Object message, Gson gson, String url) throws IOException {
         HttpPost httpPost = new HttpPost(url);
-        httpPost.setEntity(new StringEntity(gson.toJson(message), "application/json", HTTP.UTF_8));
+        String JSON = gson.toJson(message);
+        httpPost.setEntity(new StringEntity(JSON, "application/json", HTTP.UTF_8));
+        log("Sending Json : \n" + JSON);
         HttpResponse response = httpClient.execute(httpPost);
-
         log("POST \"" + url + "\" returned : " + response.getStatusLine());
         messageNumber += 2;
         EntityUtils.consume(response.getEntity());

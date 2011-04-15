@@ -10,44 +10,33 @@
     <RecentFiles>
       <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/f:_ViewStart.cshtml" caret="0" fromTop="0" />
       <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Shared/f:_Layout.cshtml" caret="124" fromTop="10" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="433" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3183" fromTop="62" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="859" fromTop="26" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="552" fromTop="19" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:MessageMetadata.cs" caret="236" fromTop="9" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonizerResult.cs" caret="357" fromTop="15" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:ComplexMessage.cs" caret="548" fromTop="18" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1673" fromTop="32" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="705" fromTop="28" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="150" fromTop="6" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="626" fromTop="18" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="379" fromTop="12" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2478" fromTop="26" />
     </RecentFiles>
     <RecentEdits>
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="7" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="30" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="16" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="212" fromTop="13" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="30" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="42" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="9" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="9" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="811" fromTop="23" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:MessageMetadata.cs" caret="233" fromTop="9" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="845" fromTop="29" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="811" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="811" fromTop="24" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="811" fromTop="6" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="811" fromTop="35" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Models/f:Message.cs" caret="471" fromTop="16" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="18" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="25" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="26" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="62" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="19" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="856" fromTop="36" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="486" fromTop="21" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Views/d:Speak/f:List.cshtml" caret="612" fromTop="25" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="24" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="13" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3193" fromTop="64" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="959" fromTop="19" />
-      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonizerResult.cs" caret="726" fromTop="21" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="528" fromTop="21" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="488" fromTop="18" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="45" fromTop="1" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="255" fromTop="9" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="186" fromTop="7" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1872" fromTop="38" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1010" fromTop="26" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2713" fromTop="33" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3038" fromTop="24" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1884" fromTop="35" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3167" fromTop="38" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="3511" fromTop="47" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:TalkSharpUtils.cs" caret="753" fromTop="20" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/f:Global.asax.cs" caret="1531" fromTop="26" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2805" fromTop="34" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="71" fromTop="2" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Utility/f:JsonDotNetResult.cs" caret="413" fromTop="16" />
+      <File id="940D1BC7-B3DF-47C2-BC2A-17CC9B35DAB3/d:Controllers/f:SpeakController.cs" caret="2478" fromTop="26" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -63,30 +52,30 @@
   </UnitTestRunnerNUnit>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="public" priority="6" />
+      <Item value="public" priority="7" />
       <Item value="int" priority="0" />
       <Item value="set" priority="3" />
-      <Item value="Message`0" priority="1" />
+      <Item value="Message`0" priority="2" />
       <Item value="ActionResult`0" priority="0" />
-      <Item value="return" priority="0" />
+      <Item value="return" priority="4" />
       <Item value="HttpStatusCodeResult`0" priority="0" />
-      <Item value="new" priority="7" />
+      <Item value="new" priority="11" />
       <Item value="JsonResult`0" priority="1" />
       <Item value="this" priority="1" />
       <Item value="JsonResult" priority="0" />
       <Item value="Model`0" priority="0" />
-      <Item value="T`0" priority="0" />
+      <Item value="T`0" priority="1" />
       <Item value="Response" priority="0" />
       <Item value="MultiSelectList`0" priority="0" />
       <Item value="List&lt;Message&gt;" priority="0" />
       <Item value="Recordings" priority="4" />
       <Item value="Message" priority="1" />
       <Item value="Nested" priority="0" />
-      <Item value="string" priority="1" />
+      <Item value="string" priority="2" />
       <Item value="Serializer" priority="1" />
       <Item value="Json`0" priority="0" />
       <Item value="TheMessage" priority="0" />
-      <Item value="static" priority="0" />
+      <Item value="static" priority="2" />
       <Item value="MessageMetadata`0" priority="0" />
       <Item value="Number" priority="0" />
       <Item value="Text" priority="0" />
@@ -97,6 +86,32 @@
       <Item value="Keys" priority="0" />
       <Item value="IsoDateTimeConverter" priority="0" />
       <Item value="AdjustToUniversal" priority="0" />
+      <Item value="ComplexMessage" priority="0" />
+      <Item value="DateTime`0" priority="0" />
+      <Item value="_Dictionary" priority="0" />
+      <Item value="ComplexRecordings" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="KeyValuePair" priority="0" />
+      <Item value="List`0" priority="0" />
+      <Item value="ValueProviderFactories`0" priority="0" />
+      <Item value="JsonValueProviderFactory`0" priority="0" />
+      <Item value="JsonDotNetValueProviderFactory`0" priority="0" />
+      <Item value="ValueProviderResult`0" priority="0" />
+      <Item value="false" priority="0" />
+      <Item value="bodyText" priority="0" />
+      <Item value="TextReader`0" priority="1" />
+      <Item value="reader" priority="2" />
+      <Item value="JsonReader`0" priority="0" />
+      <Item value="jsonData" priority="0" />
+      <Item value="prefix" priority="0" />
+      <Item value="TalkSharp" priority="0" />
+      <Item value="Utility" priority="0" />
+      <Item value="Request" priority="2" />
+      <Item value="ComplexMessage`0" priority="1" />
+      <Item value="TalkSharpUtils`0" priority="1" />
+      <Item value="UTF8" priority="1" />
+      <Item value="GetSerializer`0" priority="0" />
+      <Item value="RequestStream" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:TalkSharp.Controllers.SpeakController">
       <Item value="Json`0" priority="0" />
@@ -106,11 +121,11 @@
       <Item value="Count" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Newtonsoft.Json.JsonSerializer">
-      <Item value="Deserialize`0" priority="0" />
+      <Item value="Deserialize`0" priority="2" />
       <Item value="Converters" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.DateTime">
-      <Item value="Now" priority="0" />
+      <Item value="Now" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Newtonsoft.Json.JsonConverterCollection">
       <Item value="Add`0" priority="0" />
@@ -121,6 +136,27 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Globalization.DateTimeStyles">
       <Item value="AssumeLocal" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.ValueProviderFactories">
+      <Item value="Factories" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ValueProviderFactoryCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Globalization.CultureInfo">
+      <Item value="CurrentCulture" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="StartsWith`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.HttpRequestBase">
+      <Item value="InputStream" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@TalkSharp.Utility.TalkSharpUtils">
+      <Item value="GetSerializer`0" priority="1" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>

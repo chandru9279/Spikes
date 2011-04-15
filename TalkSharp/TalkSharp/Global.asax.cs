@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
-using TalkSharp.Utility;
 
 namespace TalkSharp
 {
@@ -21,7 +20,7 @@ namespace TalkSharp
             Routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Speak", action = "List", id = UrlParameter.Optional } // Parameter defaults
+                new { controller = "Menu", action = "Show", id = UrlParameter.Optional } // Parameter defaults
             );
 
         }

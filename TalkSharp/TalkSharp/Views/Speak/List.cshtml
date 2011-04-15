@@ -1,11 +1,13 @@
 ﻿@{
-    var Simple = TalkSharp.Controllers.SpeakController.Recordings;
-    var Complex = TalkSharp.Controllers.SpeakController.ComplexRecordings;
-    var i = 1;
+    var Simple = TalkSharp.Controllers.InMemoryStore.Recordings;
+    var Complex = TalkSharp.Controllers.InMemoryStore.ComplexRecordings;
 }
 @{
     ViewBag.Title = "List";
 }
+
+@Html.ActionLink("Back to Menu", "Show", "Menu")
+
 <h2>
     Simple Messages
 </h2>

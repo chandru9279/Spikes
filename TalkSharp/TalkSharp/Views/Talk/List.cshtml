@@ -1,0 +1,46 @@
+﻿@{
+    var People = TalkSharp.Controllers.InMemoryStore.People;
+}
+@{
+    ViewBag.Title = "List";
+}
+
+@Html.ActionLink("Back to Menu", "Show", "Menu")
+
+<h2>
+    People
+</h2>
+<ol>
+@foreach (var Person in People)
+{
+    <li>
+    @if (Person.Addresses != null)
+    {
+    <h4>Addresses</h4>
+    <ul>
+        @foreach (var Address in Person.Addresses)
+        {  
+            <li>@Address.Priority : @Address.AddressText</li> 
+        }
+    </ul>
+    }
+    
+    @if (Person.Birthday != null)
+    {
+    <h4>Birthday</h4>
+    <i>@Person.Birthday.ToString()</i>
+    }
+    
+    @if (Person.Profile != null)
+    {
+    <h4>Profile Fields</h4>
+    <ul>
+        @foreach (var Field in Person.Profile)
+        {  
+            <li>@Field.Key : @Field.Value</li> 
+        }
+    </ul>
+    }
+    </li>
+}
+</ol>

@@ -11,14 +11,17 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+
+import static Entry.Start.ServerJsonEndpoint;
 
 public class GetData {
+
 
     private DefaultHttpClient httpClient;
 
@@ -26,34 +29,25 @@ public class GetData {
         this.httpClient = httpClient;
     }
 
-    public void GetAllSimple() throws IOException {
-        HttpEntity entity = doGetRequest("http://localhost:6419/Speak/GetAllSimple");
-
-        Gson gson = new Gson();
-
+    public void getAllSimple() throws IOException {
+        String JSON = doGetRequest(ServerJsonEndpoint + "GetAllSimple");
         Type type = new TypeToken<ArrayList<Message>>() {
         }.getType();
-
-        List<Message> messages = gson.fromJson(new InputStreamReader(entity.getContent()), type);
-        for (Message message : messages)
-            logMessage(message);
-
-        // This utility method clears the InputStream of the entity making the httpClient available for the next request
-        EntityUtils.consume(entity);
-    }
-
-    public void GetLast() throws IOException {
-        HttpEntity entity = doGetRequest("http://localhost:6419/Speak/GetLast");
-
         Gson gson = new Gson();
-        Message message = gson.fromJson(new InputStreamReader(entity.getContent()), Message.class);
-        logMessage(message);
-
-        EntityUtils.consume(entity);
+        List<Message> messages = gson.fromJson(JSON, type);
+        for (Message message : messages)
+            log(message.toString());
     }
 
-    public void GetAllComplex() throws IOException {
-        HttpEntity entity = doGetRequest("http://localhost:6419/Speak/GetAllComplex");
+    public void getLast() throws IOException {
+        String JSON = doGetRequest(ServerJsonEndpoint + "GetLast");
+        Gson gson = new Gson();
+        Message message = gson.fromJson(JSON, Message.class);
+        log(message.toString());
+    }
+
+    public void getAllComplex() throws IOException {
+        String JSON = doGetRequest(ServerJsonEndpoint + "GetAllComplex");
 
         GsonBuilder builder = new GsonBuilder();
         builder.setDateFormat("yyyy-MM-dd'T'HH:mm:ss");
@@ -62,41 +56,26 @@ public class GetData {
         Type type = new TypeToken<ArrayList<ComplexMessage>>() {
         }.getType();
 
-        List<ComplexMessage> messages = gson.fromJson(new InputStreamReader(entity.getContent()), type);
+        List<ComplexMessage> messages = gson.fromJson(JSON, type);
         int messageNumber = 1;
         for (ComplexMessage message : messages)
         {
             log(messageNumber++ + "");
-            logComplexMessage(message);
+            log(message.toString());
         }
     }
 
-    private HttpEntity doGetRequest(String url) throws IOException {
+    private String doGetRequest(String url) throws IOException {
         HttpGet httpGet = new HttpGet(url);
         HttpResponse response = httpClient.execute(httpGet);
         HttpEntity entity = response.getEntity();
         log("GET \"" + url + "\" returned : " + response.getStatusLine());
-        return entity;
+        String JSON = new BufferedReader(new InputStreamReader(entity.getContent())).readLine();
+        log("JSON : " + JSON);
+        // This utility method clears the InputStream of the entity making the httpClient available for the next request
+        EntityUtils.consume(entity);
+        return JSON;
     }
-
-    private void logMessage(Message message) {
-        log(message.Number + " : " + message.Text);
-    }
-
-    private void logComplexMessage(ComplexMessage message) {
-        if (message.Messages != null) {
-            log("Messages : ");
-            for (Message nestedMessage : message.Messages)
-                log("\t" + nestedMessage.Number + " : " + nestedMessage.Text);
-        }
-        log("TimeStamp : " + message.Timestamp);
-        if (message.Metadata != null) {
-            log("Metadata : ");
-            for (Map.Entry<String, String> pair : message.Metadata.entrySet())
-                log("\t" + pair.getKey() + " : " + pair.getValue());
-        }
-    }
-
 
     private void log(String log) {
         System.out.println(log);

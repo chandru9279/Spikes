@@ -15,7 +15,7 @@ namespace TalkSharp.Utility
         public override void ExecuteResult(ControllerContext Context)
         {
             Context.HttpContext.Response.ContentType = "application/json";
-            JsonSerializer Serializer = TalkSharpUtils.GetSerializer();
+            JsonSerializer Serializer = Utils.GetJsonSerializer();
             Serializer.Serialize(Context.HttpContext.Response.Output, Response);
         }
     }

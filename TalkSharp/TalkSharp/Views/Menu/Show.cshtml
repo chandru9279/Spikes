@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Show";
+}
+
+<h1>Show</h1>
+
+<style type="text/css">
+li
+{
+    font-size: 20px;
+    margin: 20px;
+}
+</style>
+
+<ul>
+    <li>@Html.ActionLink("Show Messages - Simple and Complex", "List", "Speak")</li>
+    <li>@Html.ActionLink("Show All Person records", "List", "Talk")</li>
+    <li>@Html.ActionLink("JSON - Get All Simple Messages ", "GetAllSimple", "Speak")</li>
+    <li>@Html.ActionLink("JSON - Get Last Simple Messages ", "GetLast", "Speak")</li>
+    <li>@Html.ActionLink("JSON - Get All Complex Messages ", "GetAllComplex", "Speak")</li>
+    <li>@Html.ActionLink("XML - Get Last Person", "GetLast", "Talk")</li>
+    <li>@Html.ActionLink("XML - Get All Personnel (Get People) ", "GetPeople", "Talk")</li>
+</ul>

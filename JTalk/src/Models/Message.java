@@ -14,4 +14,9 @@ public class Message {
 
     public String Text;
 
+
+    @Override
+    public String toString() {
+        return Number + " : " + Text;
+    }
 }
