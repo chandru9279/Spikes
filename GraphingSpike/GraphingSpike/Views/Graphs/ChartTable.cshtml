@@ -1,0 +1,22 @@
+﻿@using GraphingSpike.Controllers
+@model GraphsController.GraphsViewModel
+           
+@{
+    Layout = null;
+}
+
+@* Note the # symbol in usemap, It's important! *@
+<img id="TheGraph" src="/Graphs/ChartImage?time=@DateTime.Now.Millisecond" alt="Sample graph" usemap="#GraphImageMap" class="TheGraph"/>
+@Model.ImageMap
+<div class="TheTable">
+<div class="Header-Row"><span>X-Val</span><span>Y-Val</span></div>
+@{
+    int i = 0;
+    foreach (var entry in InMemoryStore.DataSet)
+    {
+        <div class="Data-Row" id="Row-Number-@i"><span>@entry.Key</span><span>@entry.Value</span></div>
+        i++;
+    }
+}
+</div>
+<div class="clear"></div>

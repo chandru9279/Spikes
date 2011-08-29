@@ -1,0 +1,12 @@
+*/obj/
+*/bin/
+
+*.suo
+*.cache
+*.user
+*.db
+
+packages/
+TestResults/
+_ReSharper.GraphingSpike/
+.metadata/
